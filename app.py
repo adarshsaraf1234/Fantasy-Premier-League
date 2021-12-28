@@ -30,8 +30,6 @@ except:
     player_stats=pd.read_csv(base+"/"+option+"/players/"+player+"_"+id+"/gw.csv")
     
 
-
-
 df=pd.read_csv(link,encoding='ISO-8859-1',engine='python')
 fig = px.line(player_stats,y='total_points',title=f'points vs gameweek')
 st.plotly_chart(fig)
